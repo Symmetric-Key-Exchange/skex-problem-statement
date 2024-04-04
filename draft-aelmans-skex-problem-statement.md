@@ -19,18 +19,18 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
+title: "Symmetric Key Exchange Problem Statement"
 abbrev: "TODO - Abbreviation"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
-submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+docname: draft-aelmans-skex-problem-statement
+submissiontype: IETF
 number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: SEC
+workgroup: SKEX
 keyword:
  - next generation
  - unicorn
@@ -38,16 +38,16 @@ keyword:
 venue:
   group: WG
   type: Working Group
-  mail: WG@example.com
+  mail: skex@ietf.org
   arch: https://example.com/WG
-  github: USER/REPO
+  github: Symmetric-Key-Exchange/skex-problem-statement
   latest: https://example.com/LATEST
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Melchior Aelmans
+    organization: Juniper Networks
+    email: melchior@juniper.net
 
 normative:
 
@@ -56,7 +56,7 @@ informative:
 
 --- abstract
 
-TODO Abstract
+Asymmetric cryptography and Public-key cryptography mechanisms are considered to be vurnerable to quantum-computer attacks posing a challange to data security and integrety. This documents outlines and describes the challanges with currently widely used Asymmetric cryptography and Public-key cryptography.
 
 
 --- middle
