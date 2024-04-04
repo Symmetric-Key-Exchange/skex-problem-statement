@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: SEC
-workgroup: SKEX
+# area: SEC
+# workgroup: SKEX
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: skex@ietf.org
-  arch: https://example.com/WG
-  github: Symmetric-Key-Exchange/skex-problem-statement
-  latest: https://example.com/LATEST
+#  group: WG
+#  type: Working Group
+#  mail: skex@ietf.org
+#  arch: https://example.com/WG
+  github: "Symmetric-Key-Exchange/skex-problem-statement"
+  latest: "https://Symmetric-Key-Exchange.github.io/skex-problem-statement/draft-aelmans-skex-problem-statement.html"
 
 author:
  -
