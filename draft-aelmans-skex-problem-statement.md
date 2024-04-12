@@ -45,9 +45,9 @@ Asymmetric cryptography and Public-key cryptography mechanisms are considered to
 
 The current context presents challenges for communication security on the Internet:
 * Asymmetric-key cryptography is a versatile tool for securing communication but it does have some shortcomings and limitations, including that:
- - It is generally computationally intensive
- - Its security relies on the complexity of solving mathematical problems
- - The arrival of the quantum era is now additionally jeopardizing the security of key exchanges based on asymmetric cryptography.
+** It is generally computationally intensive
+** Its security relies on the complexity of solving mathematical problems
+** The arrival of the quantum era is now additionally jeopardizing the security of key exchanges based on asymmetric cryptography.
 * Post Quantum Cryptography (PQC) algorithms show some promise against quantum attacks, but are unproven and * typically computationally intensive and require increased message sizes.
 * Quantum Key Distribution (QKD) has desirable properties, but is unsuitable for general use on the internet.
 * Symmetric key cryptography is well-trusted, including Pre-Shared keys (PSK), though the key distribution presents a challenge.
