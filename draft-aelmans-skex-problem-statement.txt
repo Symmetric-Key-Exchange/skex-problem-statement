@@ -1,0 +1,145 @@
+
+
+
+
+Network Working Group                                         M. Aelmans
+Internet-Draft                                          Juniper Networks
+Intended status: Informational                             13 April 2024
+Expires: 15 October 2024
+
+
+                Symmetric Key Exchange Problem Statement
+              draft-aelmans-skex-problem-statement-latest
+
+Abstract
+
+   Asymmetric cryptography and Public-key cryptography mechanisms are
+   considered to be vulnerable to quantum computer attacks, posing a
+   challenge to data security and integrity.  Furthermore, there are use
+   cases where asymmetric cryptography is not a good fit to solve the
+   problem of key distribution, examples include computationally
+   constrained devices.  This document outlines and describes the
+   challenges with currently widely used Asymmetric cryptography and
+   Public-key cryptography.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at https://Symmetric-
+   Key-Exchange.github.io/skex-problem-statement/draft-aelmans-skex-
+   problem-statement.html.  Status information for this document may be
+   found at https://datatracker.ietf.org/doc/draft-aelmans-skex-problem-
+   statement/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/Symmetric-Key-Exchange/skex-problem-statement.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 15 October 2024.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions and Definitions
+   3.  Security Considerations
+   4.  IANA Considerations
+   5.  Normative References
+   Acknowledgments
+   Author's Address
+
+1.  Introduction
+
+   The current context presents challenges for communication security on
+   the Internet: * Asymmetric-key cryptography is a versatile tool for
+   securing communication but it does have some shortcomings and
+   limitations, including that: * It is generally computationally
+   intensive * Its security relies on the complexity of solving
+   mathematical problems * The arrival of the quantum era is now
+   additionally jeopardizing the security of key exchanges based on
+   asymmetric cryptography. * Post Quantum Cryptography (PQC) algorithms
+   show some promise against quantum attacks, but are unproven and *
+   typically computationally intensive and require increased message
+   sizes. * Quantum Key Distribution (QKD) has desirable properties, but
+   is unsuitable for general use on the internet. * Symmetric key
+   cryptography is well-trusted, including Pre-Shared keys (PSK), though
+   the key distribution presents a challenge.
+
+   This leads to the need to address the problem of symmetric key
+   establishment and standardization: * Symmetric key distribution
+   mechanisms and protocols are not yet standardized. * Several
+   government institutions and users of cryptography have requested
+   newer and standardized methods for symmetric key distribution
+   mechanisms. * System integrators and architects need to be able to
+   abstract the symmetric key distribution so that their systems do not
+   depend on a specific vendor. * Existing interface standards do not
+   address all abstraction levels nor the range of applications.  For
+   example, ETSI GS QKD 014 is a high-level protocol, unsuited to
+   internal low-level APIs. * Security of key management must be
+   considered in a wide range of contexts. * Systems that may be
+   deployed widely must be highly scalable.
+
+2.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+3.  Security Considerations
+
+   TODO Security
+
+4.  IANA Considerations
+
+   This document has no IANA actions.
+
+5.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+Acknowledgments
+
+   TODO acknowledge.
+
+Author's Address
+
+   Melchior Aelmans
+   Juniper Networks
+   Email: melchior@juniper.net
