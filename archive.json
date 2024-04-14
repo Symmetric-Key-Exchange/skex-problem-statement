@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-11T00:52:37.148179+00:00",
+  "timestamp": "2024-04-14T01:11:23.010796+00:00",
   "repo": "Symmetric-Key-Exchange/skex-problem-statement",
   "labels": [
     {
@@ -50,5 +50,34 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOLp-1MM5si1QS",
+      "title": "Manfred 01",
+      "url": "https://github.com/Symmetric-Key-Exchange/skex-problem-statement/pull/1",
+      "state": "MERGED",
+      "author": "manfredvw",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-04-12T23:30:05Z",
+      "updatedAt": "2024-04-13T07:04:30Z",
+      "baseRepository": "Symmetric-Key-Exchange/skex-problem-statement",
+      "baseRefName": "main",
+      "baseRefOid": "a44eaf924cd5434f09edc23744afe8ed0824b731",
+      "headRepository": "manfredvw/skex-problem-statement",
+      "headRefName": "manfred-01",
+      "headRefOid": "d60498ae3539c9de49c7d8e5f4acff68bf575c85",
+      "closedAt": "2024-04-13T07:04:29Z",
+      "mergedAt": "2024-04-13T07:04:29Z",
+      "mergedBy": "maelmans",
+      "mergeCommit": {
+        "oid": "1f6f9aed53c33e910a4213eb594d4fee3270b662"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
